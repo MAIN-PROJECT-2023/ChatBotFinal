@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Entry Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/demo.css') }}">
+</head>
+<body>
+   
+    <div class="container">
+        <h2>Test Entry Form</h2>
+        <form id="entryForm" action="/submit_form" method="POST">
+            <div class="form-group">
+                <label for="education">Type of Education</label>
+                <select id="education" name="education" required>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="Higher">Higher</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
